@@ -15,8 +15,6 @@ public class Coches {
             }
         }while (!coche.isEmpty());
         Collections.sort(coches);
-        for (int i = 0; i < coches.size(); i++) {
-            System.out.println(coches.get(i));
-        }
+        System.out.println(coches);
     }
 }

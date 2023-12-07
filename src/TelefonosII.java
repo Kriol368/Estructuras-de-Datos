@@ -1,4 +1,4 @@
-import java.util.*;
+/*import java.util.*;
 
 public class TelefonosII {
     public static Map<String, ArrayList<Integer>> Numeros(){
@@ -11,7 +11,7 @@ public class TelefonosII {
     }
 
 
-    public static String Numeros(String contacto, Map<String, Integer> numeros){
+    public static String Numeros(String contacto, Map<String, ArrayList<Integer>> numeros){
         String numerosContacto = "";
         ArrayList<Integer> numerosArray = new ArrayList<>();
         numerosArray.add(numeros.get(contacto));
@@ -25,7 +25,9 @@ public class TelefonosII {
         String contacto;
         System.out.println("Introduce un contacto: ");
         contacto = scanner.next();
-        System.out.println("Los numeros de " + contacto + " son " + Numeros());
+        System.out.println("Los numeros de " + contacto + " son " + Numeros(contacto,Numeros()));
 
     }
 }
+109 144
+*/

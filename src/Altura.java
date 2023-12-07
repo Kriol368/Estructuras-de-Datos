@@ -44,7 +44,7 @@ public class Altura {
     public static int calcularAlumnosAlturaInferior(ArrayList<Double> alturas, double media){
         int alumnosAlturaInferior=0;
         for (int i = 0; i < alturas.size(); i++) {
-            if (alturas.get(i) < media){
+            if (alturas.get(i) < media) {
                 alumnosAlturaInferior++;
             }
         }
