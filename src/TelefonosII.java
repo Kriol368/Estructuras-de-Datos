@@ -1,4 +1,4 @@
-/*import java.util.*;
+import java.util.*;
 
 public class TelefonosII {
     public static Map<String, ArrayList<Integer>> Numeros(){
@@ -6,15 +6,15 @@ public class TelefonosII {
         numeros.put("Pedro", (ArrayList<Integer>) Arrays.asList(691876654,654546372));
         numeros.put("Juan", (ArrayList<Integer>) Arrays.asList(662537920,688333999,654456738));
         numeros.put("Maria", (ArrayList<Integer>) Arrays.asList(619028564,678028000));
-        numeros.put("Manolo", (ArrayList<Integer>) Arrays.asList(692010222));
+        numeros.put("Manolo", (ArrayList<Integer>) List.of(692010222));
         return numeros;
     }
 
 
     public static String Numeros(String contacto, Map<String, ArrayList<Integer>> numeros){
         String numerosContacto = "";
-        ArrayList<Integer> numerosArray = new ArrayList<>();
-        numerosArray.add(numeros.get(contacto));
+        ArrayList<Integer> numerosArray;
+        numerosArray = numeros.get(contacto);
         for (int i = 0; i < numerosArray.size(); i++) {
            numerosContacto += numerosArray.get(i) + ", ";
         }
@@ -29,5 +29,4 @@ public class TelefonosII {
 
     }
 }
-109 144
-*/
+
