@@ -19,7 +19,9 @@ public class CountCountries {
 
 
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("/media/alu10728670/Nuevo vol 3/Programación/IdeaProjects/Estructuras-de-Datos/src/Colfuturo-Seleccionados.csv"));
+        String filePath = new File("").getAbsolutePath();
+        filePath = filePath.concat("/src/Colfuturo-Seleccionados.csv");
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
         String line;
         Map<String, Integer> paises = new HashMap<>();
         while ((line = reader.readLine()) != null) {

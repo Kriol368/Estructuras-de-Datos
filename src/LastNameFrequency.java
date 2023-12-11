@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
@@ -17,7 +18,9 @@ public class LastNameFrequency {
         }
     }
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("/media/alu10728670/Nuevo vol 3/Programación/IdeaProjects/Estructuras-de-Datos/src/LastnameFrequencies.csv"));
+        String filePath = new File("").getAbsolutePath();
+        filePath = filePath.concat("/src/LastnameFrequencies.csv");
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
         String line;
         Map <String, String> apellidos = new HashMap<>();
         while ((line = reader.readLine()) != null) {

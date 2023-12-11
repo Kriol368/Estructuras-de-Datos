@@ -29,7 +29,9 @@ public class Anagramas {
 
 
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("/media/alu10728670/Nuevo vol 3/Programación/IdeaProjects/Estructuras-de-Datos/src/spanish-dict.txt"));
+        String filePath = new File("").getAbsolutePath();
+        filePath = filePath.concat("/src/spanish-dict.txt");
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
         String line;
         Map<String, String> palabras = new HashMap<>();
         while ((line = reader.readLine())!=null) {
