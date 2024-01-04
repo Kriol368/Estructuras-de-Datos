@@ -33,6 +33,7 @@ public class Regalos {
         return regalos;
     }
     public static void main(String[] args) {
+        //OK
         System.out.println(reparte(0, 2, 4));
         System.out.println(reparte(3,2,5,1));
         System.out.println(reparte(3,2,4,7));

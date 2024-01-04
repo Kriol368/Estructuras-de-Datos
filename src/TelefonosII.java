@@ -12,6 +12,7 @@ public class TelefonosII {
 
 
     public static void main(String[] args) {
+        //OK
         Scanner scanner = new Scanner(System.in);
         String contacto;
         System.out.println("Introduce un contacto: ");

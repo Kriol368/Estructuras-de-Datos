@@ -18,6 +18,7 @@ public class PaisCapital {
         return capitales.get(pais);
     }
     public static void main(String[] args) {
+        //OK
         Scanner scanner = new Scanner(System.in);
         String pais;
         System.out.println("Introduce un pais: ");

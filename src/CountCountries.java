@@ -19,6 +19,7 @@ public class CountCountries {
 
 
     public static void main(String[] args) throws IOException {
+        //OK
         String filePath = new File("").getAbsolutePath();
         filePath = filePath.concat("/src/Colfuturo-Seleccionados.csv");
         BufferedReader reader = new BufferedReader(new FileReader(filePath));

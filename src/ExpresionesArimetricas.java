@@ -64,6 +64,7 @@ public class ExpresionesArimetricas {
 
 
     public static void main(String[] args) {
+        //OK
         String operacion;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce una operación: ");
