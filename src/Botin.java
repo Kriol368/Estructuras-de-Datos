@@ -23,6 +23,7 @@ public class Botin {
     }
 
         public static void main(String[] args) {
+            //OK
             System.out.println(repartir(2, 10, 20, 50, 200, 500));
             System.out.println(repartir( 3, 50, 20, 100, 200, 500, 10, 50));
     }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Altura {
-
+    //OK
     public static int numeroAlumnos(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce el numero de alumnos: ");

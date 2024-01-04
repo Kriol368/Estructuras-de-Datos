@@ -5,16 +5,18 @@ public class Anagramas {
 
 
     public static String alfabetizada(String line){
-        String[] caracteres = new String[line.length()];
-        for (int i = 0; i < line.length(); i++) {
-            caracteres[i] = line.charAt(i) + "";
-        }
+        // String[] caracteres = new String[line.length()];
+        // for (int i = 0; i < line.length(); i++) {
+        //     caracteres[i] = line.charAt(i) + "";
+        // }
+        // Arrays.sort(caracteres);
+        // String alfabetizada = "";
+        // for (int i = 0; i < caracteres.length; i++) {
+        //     alfabetizada += caracteres[i];
+        // }
+        char[] caracteres = line.toCharArray();
         Arrays.sort(caracteres);
-        String alfabetizada = "";
-        for (int i = 0; i < caracteres.length; i++) {
-            alfabetizada += caracteres[i];
-        }
-        return alfabetizada;
+        return new String(caracteres);
     }
 
    public static Map<String, String> Anagrama(String alfabetizada, String line, Map<String, String> palabras){
@@ -29,6 +31,7 @@ public class Anagramas {
 
 
     public static void main(String[] args) throws IOException {
+        //OK
         String filePath = new File("").getAbsolutePath();
         filePath = filePath.concat("/src/spanish-dict.txt");
         BufferedReader reader = new BufferedReader(new FileReader(filePath));

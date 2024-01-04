@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class Coches {
+    //OK
     public static void main(String[] args) {
         ArrayList<String> coches = new ArrayList<>();
         String coche;

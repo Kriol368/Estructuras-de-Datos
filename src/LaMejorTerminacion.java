@@ -19,6 +19,7 @@ public class LaMejorTerminacion {
 
 
     public static void main(String[] args) {
+        //OK
         System.out.println(terminaciones("00004", "03847", "39804"));
         System.out.println(terminaciones("58975", "25894", "52985", "98598"));
     }
